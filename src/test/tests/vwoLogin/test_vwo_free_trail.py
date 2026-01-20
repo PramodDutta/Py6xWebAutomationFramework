@@ -1,6 +1,4 @@
-import allure
 import pytest
-import time
 
 from selenium import webdriver
 
@@ -12,10 +10,9 @@ from selenium import webdriver
 
 
 from src.test.constants.Constants import Constants
-from src.test.pageObjets.vwo.loginPage import LoginPage
-from src.test.pageObjets.vwo.freeTrailPage import FreeTrialPage
+from src.test.pageObjets.POM.vwo import LoginPage
+from src.test.pageObjets.POM.vwo import FreeTrialPage
 from dotenv import load_dotenv
-import os
 from src.test.utils.Utils import *
 
 
