@@ -11,9 +11,10 @@ class DashboardPage(PageFactory):
         self.highlight = True
 
     locators = {
-        'username_logged_in': ('XPATH', "//div[@data-qa='nadoqazuxo']/selected-value-slot/span[1]")
+        'username_logged_in': ('XPATH', "//h6")
     }
 
     def user_logged_in_text(self):
+        time.sleep(5)
         webdriver_wait_url(driver=self.driver, timeout=10)
         return self.username_logged_in.get_text()
